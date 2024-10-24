@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Jangan lupa import stylesheet untuk toastify
 import { useEffect, useState } from "react";
 import "../index.css";
+import { Helmet } from "react-helmet"; // Fixed casing here
 import usersData from "../db.json";
 import { useNavigate } from "react-router-dom";
 import AppRouter from "../components/router/route"; /// Import router
@@ -65,6 +66,10 @@ function App() {
         <div className="w-full max-w-xs">
           <form className="rounded px-8 pt-6 pb-8 mb-4 mt-20">
             <div className="mb-4 text-center">
+              <Helmet>
+                <title>Login Page</title>
+              </Helmet>
+              <h1 className="mb-5 ml-2">Login</h1>
               <label
                 className="block text-gray-700 text-sm font-bold mx-2 mb-1"
                 htmlFor="nick"
@@ -110,18 +115,18 @@ function App() {
 
             <div className="flex justify-between text-center mb-6 mx-2">
               <button
-                className="mx-2 btn btn-primary"
+                className="ml-4 btn btn-primary"
                 type="button"
-                onClick={handleLogin} // Menambahkan event onClick untuk login
-              >
-                Login
-              </button>
-              <button
-                className="btn btn-primary"
-                type="button"
-                onClick={registerPage}
+                onClick={registerPage} // Menambahkan event onClick untuk login
               >
                 Sign Up
+              </button>
+              <button
+                className="btn mr-20 btn-primary"
+                type="button"
+                onClick={handleLogin}
+              >
+                Login
               </button>
             </div>
           </form>

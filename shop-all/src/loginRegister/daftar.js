@@ -72,7 +72,9 @@ function App() {
             <Helmet>
               <title>Register</title>
             </Helmet>
-            <h1>Daftar</h1>
+            <div>
+              <h1 className="mb-2 ml-2">Daftar</h1>
+            </div>
             <label
               className="block text-gray-700 text-sm font-bold mx-2 mb-1"
               htmlFor="firstName"
@@ -134,7 +136,7 @@ function App() {
 
           <div className="flex justify-between text-center mb-6 mx-2">
             <button
-              className="mx-0 btn btn-primary"
+              className="ml-4 btn btn-primary"
               type="button"
               onClick={handleRegister}
               disabled={loading} // Disable button while loading
@@ -142,7 +144,7 @@ function App() {
               {loading ? "Loading..." : "Sign Up"} {/* Show loading status */}
             </button>
             <button
-              className="btn btn-primary"
+              className="btn mr-20 btn-primary"
               type="button"
               onClick={loginPage} // Corrected the redirect function
             >
