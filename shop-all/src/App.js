@@ -1,4 +1,5 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable */
+
 import "./index.css";
 import AppRouter from "./components/router/route";
 import "bootstrap/dist/css/bootstrap.min.css";

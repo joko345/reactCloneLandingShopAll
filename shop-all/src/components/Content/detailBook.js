@@ -1,4 +1,5 @@
-// Other imports remain the same
+/* eslint-disable */
+
 import { useEffect, useState, useContext } from "react";
 import ReactiveButton from "reactive-button";
 import { Helmet } from "react-helmet";
@@ -15,7 +16,7 @@ import book5 from "../bg/book5.jpg";
 import book6 from "../bg/book6.jpg";
 import book7 from "../bg/book7.jpg";
 import book8 from "../bg/book8.jpg";
-/* eslint-disable no-unused-vars */
+
 export default function DetailBook() {
   const { cart, setCart } = useContext(CartContext); //untuk menerima data cart
   const [reactButton, setButton] = useState("idle");

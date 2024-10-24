@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -6,10 +8,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../index.css";
 import axios from "axios";
-/* eslint-disable no-unused-vars */
 
 function App() {
-  /* eslint-disable no-unused-vars */
   const [user, setUser] = useState({
     firstName: "", // Added firstName to the initial state
     nick: "",

@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 import AppRouter from "../components/router/route"; /// Import router
 
 function App() {
-  /* eslint-disable no-unused-vars */
   const arah = useNavigate();
   const registerPage = () => {
     arah("/daftar"); // Navigate to login page

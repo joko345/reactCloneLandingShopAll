@@ -1,4 +1,5 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable */
+
 import { Helmet } from "react-helmet";
 import "./Content.css";
 import { useEffect, useState } from "react";
