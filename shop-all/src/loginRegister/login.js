@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Jangan lupa import stylesheet untuk toastify
@@ -7,9 +8,9 @@ import { Helmet } from "react-helmet"; // Fixed casing here
 import usersData from "../db.json";
 import { useNavigate } from "react-router-dom";
 import AppRouter from "../components/router/route"; /// Import router
-/* eslint-disable no-unused-vars */
 
 function App() {
+  /* eslint-disable no-unused-vars */
   const arah = useNavigate();
   const registerPage = () => {
     arah("/daftar"); // Navigate to login page

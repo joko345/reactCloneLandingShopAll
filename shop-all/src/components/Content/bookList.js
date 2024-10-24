@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Link, useNavigate } from "react-router-dom";
 import "./Content.css";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Pastikan Bootstrap terpasang

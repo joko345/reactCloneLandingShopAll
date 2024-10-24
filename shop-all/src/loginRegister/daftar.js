@@ -9,6 +9,7 @@ import axios from "axios";
 /* eslint-disable no-unused-vars */
 
 function App() {
+  /* eslint-disable no-unused-vars */
   const [user, setUser] = useState({
     firstName: "", // Added firstName to the initial state
     nick: "",
