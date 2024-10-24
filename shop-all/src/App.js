@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import "./index.css";
 import AppRouter from "./components/router/route";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -5,7 +6,6 @@ import { useEffect } from "react";
 import Header from "./components/headerFooter/header";
 import { CartProvider } from "./cartContext";
 import { useLocation } from "react-router-dom"; // Import useLocation
-/* eslint-disable no-unused-vars */
 
 function App() {
   useEffect(() => {}, []);
